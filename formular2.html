@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulář na objednání veverkovitých</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/downshift/preact/dist/downshift.umd.min.js">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index1.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="formular.html">Kontaktujte nás
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formular2.html">Formulář na objednání veverkovitých</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projekty.html">Projekty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">5</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://cs.wikipedia.org/wiki/Veverkovit%C3%AD">Veverkovití wikipedie</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Přihlášení</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Registrace</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Objednání veverkovitých</h2>
+        <form>
+            <div class="mb-3">
+                <label for="customerName" class="form-label">Jméno zákazníka</label>
+                <input type="text" class="form-control" id="customerName" placeholder="Zadejte vaše jméno" required>
+            </div>
+            <div class="mb-3">
+                <label for="customerEmail" class="form-label">Email zákazníka</label>
+                <input type="email" class="form-control" id="customerEmail" placeholder="Zadejte váš email" required>
+            </div>
+            <div class="mb-3">
+                <label for="squirrelType" class="form-label">Typy veverkovitých</label>
+                <select class="form-select" id="squirrelType" multiple required>
+                    <option value="chipmunk">Čipmank</option>
+                    <option value="ground_squirrel">Sysel</option>
+                    <option value="squirrel">Veverka</option>
+                    <option value="prairie_dog">Psoun</option>
+                    <option value="flying_squirrel">Poletucha</option>
+                    <option value="red_squirrel">Čikarí</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="quantity" class="form-label">Počet kusů</label>
+                <input type="number" class="form-control" id="quantity" placeholder="Zadejte počet kusů" required>
+            </div>
+            <div class="mb-3">
+                <label for="comments" class="form-label">Speciální požadavky:</label>
+                <textarea class="form-control" id="comments" rows="3" placeholder="Požadavky"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Odeslat objednávku</button>
+        </form>
+    </div>
+</body>
+</html>
